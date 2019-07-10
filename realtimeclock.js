@@ -29,6 +29,6 @@ function live_date_time(id) {
     }
     result = '' + days[day] + ', ' + months[month] + ' ' + d + ' ' + year + ' ' + h + ':' + m + ':' + s + ' ' + suffix;
     $("#" + id).html(result);
-    setTimeout('date_time("' + id + '");', '1000');
+    setTimeout('live_date_time("' + id + '");', '1000');
     return true;
 }
